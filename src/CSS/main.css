@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Comforter+Brush&display=swap');*{
+margin: 0;
+padding: 0;
+
+}
+
+
+body{
+  background-color: rgb(12, 3, 26);
+  color: rgb(224, 224, 13);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+header {
+    
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    padding-right: 50px;
+    margin-right: 20px;
+    font-size: 40px;
+    transition: font-size 0.5s ease;
+  }
+  header nav ul li:hover {
+    
+   font-size: 60px;
+  }
+  
+  header nav ul li:first-child {
+    color: black;
+
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #F5F5F5;
+  }
+
+#Priv{
+  margin: 200px 50px 50px 50px; 
+  padding: 50px 50px 50px 50px;
+  color:white; 
+  display: flex;
+  justify-content: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 50px;
+}
+
+.text {
+  transition: all 0.8s ease;
+}
+
+.text.changing {
+  opacity: 0;
+}
+
+.help{
+  margin: 50px 50px 50px 50px; 
+  padding: 50px 50px 50px 50px;
+  color:white; 
+  display: flex;
+  justify-content: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 10px;
+
+}
