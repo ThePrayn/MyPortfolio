@@ -96,3 +96,15 @@ header {
   font-size: 10px;
 
 }
+
+#About{
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 50px 50px 50px; 
+  padding: 50px 50px 500px 50px;
+  color:white; 
+  display: flex;
+  justify-content: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 50px;
+}

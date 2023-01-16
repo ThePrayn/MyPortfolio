@@ -1,8 +1,7 @@
 import React from 'react'
-import Header from './components/Header'
-import About from './components/About';
 
-class App extends React.Component{
+
+class About extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -47,14 +46,11 @@ class App extends React.Component{
     }
         return (
           <div>
-            <Header/>
-            <h1 id='Priv' className={textClass} onClick={this.handleClick}>{this.state.text}</h1>
-          <p className='help'>Кликай по буквам чтобы продолжить :)</p>
-          <About/>
+            <h1 id='About' className={textClass} onClick={this.handleClick}>{this.state.text}</h1>
+
           </div>
         );
       }
     }
-    
 
-export default App
+export default About
