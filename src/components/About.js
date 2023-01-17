@@ -5,7 +5,7 @@ class About extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          text: 'Хей привет, Меня зовут Cергей и это мой первый проект-портфолио на React',
+          text: 'Мне 24 года я из города Красноярск и я уже на протяжении 6ти месяцев самостоятельно изучаю фронтенд разработку.',
           textNumber: 1,
           isChanging: false
         };
@@ -22,13 +22,13 @@ class About extends React.Component{
             let nextText;
             if(state.textNumber === 1){
                nextTextNumber = 2;
-               nextText = "У меня мало опыта, но я горю желанием посвятить себя профессии фронтенд-разработчика";
+               nextText = "Началось всё с азов HTML+CSS. Получить хорошие знания в этой области мне помогла платформа HTMLAcademy и их качественные практические тренажёры. Там же я начал изучасть JavaScript.";
             }else if (state.textNumber === 2){
                nextTextNumber = 3;
-               nextText = "В проекте  я собрал всё, чему смог научиться";
+               nextText = "Сегодня я погружён в изучение библиотеки React, так как считаю её лучшей и самой актуальной на сегодняшний день. Весь этот проект построен на базе React";
             }else{
               nextTextNumber = 1;
-              nextText = "Хей привет, Меня зовут Cергей и это мой первый проект-портфолио на React";
+              nextText = "Свободное время я люблю уделять музыке (игре на гитаре, написание треков), спорту, видеоиграм,фильмам и спорт туризму";
             }
             return {
               textNumber: nextTextNumber,

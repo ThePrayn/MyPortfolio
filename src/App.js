@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './components/Header'
-import About from './components/About';
+import About from './components/About'
+import PhotoGallery from './components/Photos';
+
 
 class App extends React.Component{
     constructor(props) {
@@ -50,7 +52,11 @@ class App extends React.Component{
             <Header/>
             <h1 id='Priv' className={textClass} onClick={this.handleClick}>{this.state.text}</h1>
           <p className='help'>Кликай по буквам чтобы продолжить :)</p>
-          <About/>
+          <div>
+            <PhotoGallery/>
+            <aside><About/></aside>
+          
+          </div>
           </div>
         );
       }
