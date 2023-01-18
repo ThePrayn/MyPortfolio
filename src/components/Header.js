@@ -1,9 +1,8 @@
 import React from 'react'
 
 
-class Header extends React.Component{
-    
-    render() {
+const Header = () => {
+
         return (
           <header className='header'>
             <nav>
@@ -17,7 +16,7 @@ class Header extends React.Component{
             
           </header>
         );
-      }
+      
     }
 
 export default Header

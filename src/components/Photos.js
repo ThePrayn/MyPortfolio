@@ -1,53 +1,37 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class PhotoGallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentIndex: 0,
-      photos: [
-        { url: "./img/one.jpg", caption: "Photo 1" },
-        { url: "./img/two.jpg", caption: "Photo 2" },
-        { url: "./img/three.jpg", caption: "Photo 3" },
-        { url: "./img/logo-og.png", caption: "Photo 4" }
-      ]
-    };
-    this.previousPhoto = this.previousPhoto.bind(this);
-    this.nextPhoto = this.nextPhoto.bind(this);
+function PhotoGallery() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [photos] = useState([
+      { url: "./img/one.jpg", caption: "Photo 1" },
+      { url: "./img/two.jpg", caption: "Photo 2" },
+      { url: "./img/three.jpg", caption: "Photo 3" },
+      { url: "./img/logo-og.png", caption: "Photo 4" }
+  ]);
+
+  function previousPhoto() {
+      const lastIndex = photos.length - 1;
+      const shouldResetIndex = currentIndex === 0;
+      const index =  shouldResetIndex ? lastIndex : currentIndex - 1;
+      setCurrentIndex(index);
   }
 
-  previousPhoto() {
-    const lastIndex = this.state.photos.length - 1;
-    const { currentIndex } = this.state;
-    const shouldResetIndex = currentIndex === 0;
-    const index =  shouldResetIndex ? lastIndex : currentIndex - 1;
-    this.setState({
-      currentIndex: index
-    });
+  function nextPhoto() {
+      const lastIndex = photos.length - 1;
+      const shouldResetIndex = currentIndex === lastIndex;
+      const index =  shouldResetIndex ? 0 : currentIndex + 1;
+      setCurrentIndex(index);
   }
 
-  nextPhoto() {
-    const lastIndex = this.state.photos.length - 1;
-    const { currentIndex } = this.state;
-    const shouldResetIndex = currentIndex === lastIndex;
-    const index =  shouldResetIndex ? 0 : currentIndex + 1;
-    this.setState({
-      currentIndex: index
-    });
-  }
+  const currentPhoto = photos[currentIndex];
 
-  render() {
-    const { photos, currentIndex } = this.state;
-    const currentPhoto = photos[currentIndex];
-
-    return (
-        <div>
+  return (
+      <div>
           <img src={currentPhoto.url} alt={currentPhoto.caption} />
           <p>{currentPhoto.caption}</p>
-          <button onClick={this.previousPhoto}>Previous</button>
-          <button onClick={this.nextPhoto}>Next</button>
-        </div>
-    );
-  }}
-
+          <button onClick={previousPhoto}>Previous</button>
+          <button onClick={nextPhoto}>Next</button>
+      </div>
+  );
+}
 export default PhotoGallery
