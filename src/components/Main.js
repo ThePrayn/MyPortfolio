@@ -10,12 +10,12 @@ export default function Main() {
                 <ul className="content-list">
                     <li className="content-list__item">
                         <h2 className="title-2">Frontend</h2>
-                        <p>JavaScript, ReactJS, HTML, CSS, NPM, BootStrap, Figma</p>
+                        <p>ReactJS, JavaScript, HTML, CSS, NPM, BootStrap, Figma</p>
                     </li>
                     <li className="content-list__item">
                         <h2 className="title-2">QA</h2>
-                        <p className='LastSkill'>Jira, Azure DevOps, Trello,Postman, SoapUI. Android Studio, Genymotion,
-BrowserStack, XCode, iTools. Fiddler, Charles</p>
+                        <p className='LastSkill'>Jira, Azure DevOps, Trello, Postman, SoapUI, Android Studio, Genymotion,
+BrowserStack, XCode, iTools, Fiddler, Charles</p>
                     </li>
                     <li className="content-list__item">
                         <h2 className="title-2">Management</h2>
@@ -60,7 +60,7 @@ BrowserStack, XCode, iTools. Fiddler, Charles</p>
         <ul className="content-list">
                     <li className="content-list__item">
                         <h2 className="title-2">Phone</h2>
-                        <p>+79538501530</p>
+                        <p>+7-953-850-15-30</p>
                     </li>
                     <li className="content-list__item">
                         <h2 className="title-2">E-mail</h2>
