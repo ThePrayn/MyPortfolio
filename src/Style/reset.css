@@ -30,7 +30,7 @@ a, a:link, a:visited  {
     /* display: inline-block; */
 }
 a, .you{
-	color: orange;
+	color: #f77409;
 }
 
 a:hover  {
