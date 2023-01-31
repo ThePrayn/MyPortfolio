@@ -1,22 +1,22 @@
 import React from 'react'
 
-
-const Header = () => {
-
-        return (
-          <header className='header'>
-            <nav>
-              <ul>
-                <li>THE PRAYN</li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Galery</a></li>
-                <li><a href="#">Contacts</a></li>
-              </ul>
-            </nav>
-            
-          </header>
-        );
-      
-    }
-
-export default Header
+export default function Header() {
+  return (
+    <div>
+        <header className="header">
+        <div className="header__wrapper">
+            <h1 className="header__title">
+                <strong>Hi, my name is <em>Sergey</em></strong><br/>
+                I'm a junior frontend developer
+            </h1>
+            <div className="header__text">
+                <p>with passion for learning and creating.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1mPCtweiOAFakEd1x03FyJMjyaARHuuZc/view?usp=sharing" className="btn">Download CV</a>
+        
+        
+        </div>
+    </header>
+    </div>
+  )
+}
