@@ -15,7 +15,7 @@ font-family: 'Poppins', sans-serif;
     --black: #171718;
     --black-border: #26292D;
     --white: #fff;
-    --purple: #5C62EC;
+    --purple: #f77409;
 
     --text-color: var(--black);
 
@@ -67,7 +67,7 @@ html, body {
   }
    
   ::-webkit-scrollbar-thumb {
-    background-color: #5c61ec8c;
+    background-color: #f584038c;
     border-radius: 20px;
   }
    
@@ -122,10 +122,14 @@ html, body {
 
 .nav {
     padding: 20px 0;
+    width: 100%;
     border-bottom: 1px solid var(--dark-border);
     background-color: var(--dark-bg);
     color: var(--header-text);
     letter-spacing: normal;
+    position: fixed;
+    z-index: 2;
+    
 }
 
 .nav-row {
@@ -135,6 +139,7 @@ html, body {
     column-gap: 30px;
     row-gap: 20px;
     flex-wrap: wrap;
+    
 }
 
 .logo {
@@ -157,14 +162,17 @@ html, body {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .nav-list__link {
     color: var(--header-text);
-    transition: opacity 0.2s ease-in;
+    transition: opacity, color 0.2s ease-in;
+    cursor: pointer;
 }
 
 .nav-list__link:hover {
+    color: #f77409;
     opacity: 0.8;
 }
 
@@ -535,7 +543,8 @@ transform: scale(1.2);
     }
 
     .social__item {
-        width: 28px;
+        width: 30px;
+       
     }
 
 

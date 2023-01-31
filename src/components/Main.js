@@ -54,6 +54,24 @@ BrowserStack, XCode, iTools. Fiddler, Charles</p>
 
             </ul>
         </div>
+
+        <div className='container'>
+        <h1 className="title-1-5 cont">Contacts</h1>
+        <ul className="content-list">
+                    <li className="content-list__item">
+                        <h2 className="title-2">Phone</h2>
+                        <p>+79538501530</p>
+                    </li>
+                    <li className="content-list__item">
+                        <h2 className="title-2">E-mail</h2>
+                        <p>sergpolonikov@gmail.com</p>
+                    </li>
+                    <li className="content-list__item">
+                        <h2 className="title-2">Telegram</h2>
+                        <p>@ThePrayn</p>
+                    </li>
+                    </ul>
+        </div>
     </main>
     </div>
   )
