@@ -40,15 +40,10 @@ BrowserStack, XCode, iTools, Fiddler, Charles</p>
                 <li className="project">
                     <a href="./project-page.html">
                         <img src="./img/projects/02.jpg" alt="Project img" className="project__img"/>
-                        <h3 className="project__title">Video service</h3>
+                        <h3 className="project__title">Battleship Game</h3>
                     </a>
                 </li>
-                <li className="project">
-                    <a href="./project-page.html">
-                        <img src="./img/projects/03.jpg" alt="Project img" className="project__img"/>
-                        <h3 className="project__title">Video portal</h3>
-                    </a>
-                </li>
+                
 
                 
 
