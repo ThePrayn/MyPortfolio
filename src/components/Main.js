@@ -38,7 +38,7 @@ BrowserStack, XCode, iTools, Fiddler, Charles</p>
                     </a>
                 </li>
                 <li className="project">
-                    <a href="./project-page.html">
+                    <a href="https://github.com/ThePrayn/Battleship">
                         <img src="./img/projects/02.jpg" alt="Project img" className="project__img"/>
                         <h3 className="project__title">Battleship Game</h3>
                     </a>
