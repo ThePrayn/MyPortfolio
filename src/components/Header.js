@@ -12,7 +12,7 @@ export default function Header() {
             <div className="header__text">
                 <p>with passion for learning and creating.</p>
             </div>
-            <a href="https://drive.google.com/file/d/1mPCtweiOAFakEd1x03FyJMjyaARHuuZc/view?usp=sharing" className="btn">Download CV</a>
+            <a href="https://drive.google.com/file/d/1VTlIfEB6bPsVE49ya1FaZFAp3wxnw9SA/view?usp=sharing" className="btn">Download CV</a>
         
         
         </div>
