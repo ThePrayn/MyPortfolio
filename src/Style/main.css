@@ -427,11 +427,23 @@ transform: scale(1.2);
 }
 
 @media (max-width: 620px) {
+    .nav{
+        padding: 5px 0;
+    }
+    
+    .logo {
+        font-size: 16px;
+    }
 
+    .nav-list{
+        font-size: 14px;
+        column-gap: 15px;
+    }
     /* Header  */
 
     .header {
         min-height: unset;
+        padding: 100px 0;
     }
 
     .header__title {
