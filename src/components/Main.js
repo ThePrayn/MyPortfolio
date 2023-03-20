@@ -49,6 +49,12 @@ BrowserStack, XCode, iTools, Fiddler, Charles</p>
                         <h3 className="project__title">Multi-page candy web shop (beta)</h3>
                     </a>
                 </li>
+                <li className="project">
+                    <a href="https://github.com/ThePrayn/Fntastic_Discord">
+                        <img src="./img/projects/04.png" alt="Project img" className="project__img"/>
+                        <h3 className="project__title">Discord clone</h3>
+                    </a>
+                </li>
 
                 
 
